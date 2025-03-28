@@ -9,16 +9,17 @@ import RekaSelect from "./components/RekaSelect.vue";
         Reka UI vs Radix Vue Select Value issue
       </h1>
       <p class="text-gray-500">
-        When using the <code>Select</code> components in Reka UI, the selected
-        value will not render element except text.
+        When using the <code>Select</code> components from Reka UI, the
+        <code>SelectValue</code> will not render element except for the text.
       </p>
       <RekaSelect />
 
       <hr class="my-2 border-gray-200" />
 
       <p class="text-gray-500">
-        When using the <code>Select</code> component in Radix Vue, the selected
-        value will render everything including the icon and text.
+        But when using the <code>Select</code> component from Radix Vue, the
+        <code>SelectValue</code> will render everything including the image and
+        text.
       </p>
       <RadixSelect />
     </div>

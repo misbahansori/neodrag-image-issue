@@ -35,7 +35,7 @@ const options = [
 
 <template>
   <div class="space-y-2">
-    <label for="select-35">Select using Radix Vue</label>
+    <label for="select-35">Select using Reka UI</label>
     <SelectRoot>
       <SelectTrigger
         id="select-39"
