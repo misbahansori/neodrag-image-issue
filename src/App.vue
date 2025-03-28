@@ -1,30 +1,33 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import RadixSelect from "./components/RadixSelect.vue";
+import RekaSelect from "./components/RekaSelect.vue";
 </script>
-
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
-</template>
+  <div class="mx-auto max-w-4xl p-20">
+    <div class="leading-relaxed flex flex-col gap-4">
+      <h1 class="text-2xl font-semibold">
+        Reka UI vs Radix Vue Select Value issue
+      </h1>
+      <p class="text-gray-500">
+        When using the <code>Select</code> components in Reka UI, the selected
+        value will not render element except text.
+      </p>
+      <RekaSelect />
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
+      <hr class="my-2 border-gray-200" />
+
+      <p class="text-gray-500">
+        When using the <code>Select</code> component in Radix Vue, the selected
+        value will render everything including the icon and text.
+      </p>
+      <RadixSelect />
+    </div>
+    <div class="flex flex-col gap-4 pt-6">
+      <p class="text-gray-500">
+        Note: The select implementation is the same for both components.
+        <br />
+        The only difference is the imports
+      </p>
+    </div>
+  </div>
+</template>
