@@ -10,7 +10,7 @@ import RekaSelect from "./components/RekaSelect.vue";
       </h1>
       <p class="text-gray-500">
         When using the <code>Select</code> components from Reka UI, the
-        <code>SelectValue</code> will not render element except for the text.
+        <code>SelectValue</code> will not render elements except for the text.
       </p>
       <RekaSelect />
 
