@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@neodrag/vue": "^2.3.0",
     "@tailwindcss/vite": "^4.0.17",
     "radix-vue": "^1.9.17",
     "reka-ui": "^2.1.1",
