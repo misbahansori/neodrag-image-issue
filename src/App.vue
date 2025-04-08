@@ -8,10 +8,18 @@ import { vDraggable } from "@neodrag/vue";
     </p>
     <img
       v-draggable
-      draggable="true"
+      :draggable="true"
       src="./assets/vue.svg"
       alt="Vue"
       class="size-40"
     />
+    <div class="mt-24">
+      <a
+        href="https://github.com/misbahansori/neodrag-image-issue"
+        class="text-blue-600 hover:underline"
+      >
+        Github Repo
+      </a>
+    </div>
   </div>
 </template>
